@@ -136,6 +136,16 @@
 			.mf7 li {
 				height: 33px;
 			}
+			#artical h3{width: 605px;height: 40px;text-align:left ;padding-left: 20px;}
+			
+			#artical h1,h2,h4,h5{font-size: 12px;}
+			#artical h1{color: blue;border-right:1px solid black;}
+			#artical h1,h2{float: left;padding-left: 20px;}
+			#artical h4,h5{float: right;padding-right: 10px;}
+			#artical img{border-radius: 10px;}
+			#artical p,a{text-align: left;float: left;font-size: 14px;}
+			#artical a{color:blue ;float: right;}
+		
 		</style>
 	</head>
 
@@ -223,6 +233,9 @@
 					</li>
 
 				</ul>
+				<div id="artical">
+
+				</div>
 			</div>
 
 			<div class="ybian ">
@@ -309,6 +322,7 @@
 
 						</ul>
 					</div>
+					
 				</div>
 				<div style="width: 300px;height: 265px;">
 					<div style="height: 41px;">
@@ -337,9 +351,7 @@
 
 			</div>
 		</div>
-		<div id="artical">
-
-		</div>
+	
 		<script>
 			var articalList = [{
 				title: "小米Note 3全新体验：带你走进全新的刷脸的时代",
@@ -398,11 +410,10 @@
 			}]
 			var listHtml = ""
 			for(var i = 0; i < articalList.length; i++) {
-				listHtml += '<li><h3>' + articalList[i].title + '</h3>' + '<div><h4>' + articalList[i].owner + '</h4>' + '<h4>' + articalList[i].publishDate + '</h4>' + ' <
-					h4 > '+articalList[i].viewCount+' < /h4>'+'<h4>'+articalList.talker+'</h
-				4 > < /div>'+' <
-					img src = "'+articalList[i].imgUrl+'" > '+' < div > < p > '+articalList[i].rewiew+' < /p>'+'<a href="'+articalList[i].linkAddress+'">'+全文》+'</a > < /div></li > '
-				console.log(listHtml)
+				listHtml += '<li><h3>' + articalList[i].title + '</h3>' + '<div ><h1>' + articalList[i].owner + '</h1>' + '<h2>' + articalList[i].publishDate + '</h2>' +
+				' <h4> '+articalList[i].viewCount+' </h4>'+'<h5>'+articalList[i].talker+
+				'</h5> </div>'+' <img src = "'+articalList[i].imgUrl+'" > '+' <div> <p> '+articalList[i].rewiew+' </p>'+'<a href="'+articalList[i].linkAddress+'">'+'全文》'+
+				'</a> </div></li> '
 			}
 
 			document.getElementById('artical').innerHTML = listHtml
