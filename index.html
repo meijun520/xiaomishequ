@@ -10,7 +10,7 @@
 		<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css" rel="stylesheet">
 		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 		<style type="text/css">
-			body,
+				body,
 			html {
 				margin: 0;
 				padding: 0;
@@ -41,12 +41,14 @@
 			a:hover {
 				color: #ff8b3d;
 			}
-			.zbian{
+			
+			.zbian {
 				width: 645px;
 				float: left;
 				background-color: white;
-				border-radius: 5px; 
+				border-radius: 5px;
 			}
+			
 			.mihead {
 				height: 50px;
 				min-width: 990px;
@@ -109,9 +111,11 @@
 				height: 45px;
 				margin: 0;
 			}
-			.kun{
+			
+			.kun {
 				padding-left: 10px;
 			}
+			
 			.kun li {
 				margin: 0 4px;
 				width: 145px;
@@ -144,23 +148,91 @@
 			.mf7 li {
 				height: 33px;
 			}
-			#artical h3{width: 605px;height: 40px;text-align:left ;padding-left: 20px;}
-			.art1{height: 18px;}
 			
-			#artical h1,h2,h4,h5,h6{font-size: 12px;}
-			#artical h1{color: blue;border-right:1px solid black;padding-right: 5px;float: left;padding-left: 15px;}
-			#artical h2{float: left;margin-left: 10px;}
-			#artical h6,h5,h4{background: url(http://static.xiaomi.cn/xiaomicms/statics/images/comm_v2/newsIcon.png) no-repeat;}
-			#artical h6{background-position:0 -74px;float: right;padding-left: 22px;}
-			#artical h5{background-position:0 -38px;float: right;padding-left: 22px;}
-			#artical h4{float: right;padding-left: 22px;}
-			#artical img{border-radius: 10px;}
-			#artical p,a{text-align: left;float: left;font-size: 14px;}
-			#artical a{color:blue ;float: right;}
-			.rom a{color: #000000;margin-left: 2px;}
-			.play li{width: 180px;}
-			.mk5 li{float: left;width: 125px;height: 145px;
-		
+			#artical h3 {
+				width: 605px;
+				height: 40px;
+				text-align: left;
+				padding-left: 20px;
+			}
+			
+			.art1 {
+				height: 18px;
+			}
+			
+			#artical h1,
+			h2,
+			h4,
+			h5,
+			h6 {
+				font-size: 12px;
+			}
+			
+			#artical h1 {
+				color: blue;
+				border-right: 1px solid black;
+				padding-right: 5px;
+				float: left;
+				padding-left: 15px;
+			}
+			
+			#artical h2 {
+				float: left;
+				margin-left: 10px;
+			}
+			
+			#artical h6,
+			h5,
+			h4 {
+				background: url(http://static.xiaomi.cn/xiaomicms/statics/images/comm_v2/newsIcon.png) no-repeat;
+			}
+			
+			#artical h6 {
+				background-position: 0 -74px;
+				float: right;
+				padding-left: 22px;
+			}
+			
+			#artical h5 {
+				background-position: 0 -38px;
+				float: right;
+				padding-left: 22px;
+			}
+			
+			#artical h4 {
+				float: right;
+				padding-left: 22px;
+			}
+			
+			#artical img {
+				border-radius: 10px;
+			}
+			
+			#artical p,
+			a {
+				text-align: left;
+				float: left;
+				font-size: 14px;
+			}
+			
+			#artical a {
+				color: blue;
+				float: right;
+			}
+			
+			.rom a {
+				color: #000000;
+				margin-left: 2px;
+			}
+			
+			.play li {
+				width: 180px;
+			}
+			
+			.mk5 li {
+				float: left;
+				width: 125px;
+				height: 145px;
 		</style>
 	</head>
 
@@ -337,8 +409,9 @@
 
 						</ul>
 					</div>
-					
+
 				</div>
+				<button class="btn btn-success" id="articalButton">显示文章</button>
 				<div style="width: 300px;height: 265px;">
 					<div style="height: 41px;">
 						<div style="float: left;margin: 10px;">热门活动</div>
@@ -348,168 +421,169 @@
 						<img style="border-radius: 8px;" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0925/20170925120319406.jpg" style="width: 260px; height: 185px;">
 					</div>
 				</div>
-				
+
 				<div style="width: 300px;height: 277px;">
 					<div style="height: 41px;">
 						<div style="float: left;margin: 10px;">小米手机ROM</div>
 					</div>
-						<div style="clear: both;"></div>
-						<div style="text-align: center;">
-							<strong style="font-size: 45px;">90.72
+					<div style="clear: both;"></div>
+					<div style="text-align: center;">
+						<strong style="font-size: 45px;">90.72
 		    				<span style="font-size: 14px;">%</span>
 		    				</strong>
-							<h4 style="background: none;">本周推荐度</h4>
-							<em>MIUI7.9.22</em>
-							<div style="color: #FFFFFF;background-color: #FF8B3D; width: 260px;height: 35px;margin-left: 20px;line-height: 35px;">升级公告</div>
-							<span>关于MIUI开发版和隐藏版说明</span>
-							<div class="rom" style="margin-left: 20px;"><a >刷机教程|</a>
-								 <a>小米助手|</a>
-								 <a>刷线工具|</a>
-								 <a>ROM下载</a>
-							</div>
-				        </div>
-						
-						
+						<h4 style="background: none;">本周推荐度</h4>
+						<em>MIUI7.9.22</em>
+						<div style="color: #FFFFFF;background-color: #FF8B3D; width: 260px;height: 35px;margin-left: 20px;line-height: 35px;">升级公告</div>
+						<span>关于MIUI开发版和隐藏版说明</span>
+						<div class="rom" style="margin-left: 20px;">
+							<a>刷机教程|</a>
+							<a>小米助手|</a>
+							<a>刷线工具|</a>
+							<a>ROM下载</a>
+						</div>
+					</div>
+
+					<div>
+						<div style="float: left;margin: 10px;">摄影馆</div>
+						<div style="float: right;margin: 10px;">更多></div>
 						<div>
-							<div style="float: left;margin: 10px;">摄影馆</div>
-							<div style="float: right;margin: 10px;">更多></div>
-							<div>
-								<img height="185" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0323/20170323025008484.png" width="260" >
-							</div>
+							<img height="185" src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0323/20170323025008484.png" width="260">
 						</div>
-						
-						<div style="height: 41px;">
-							<div style="float: left;margin: 10px;">玩机</div>
-							<div style="float: right;margin: 10px;">更多></div>
-						</div>
-							<div>
-								<ul  class="play">
-									<li ><a style="color: #000000;font-size: 14px;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png"  width="64" height="64" color="black">米家有品</a>
-									<p style="font-size: 12px;">小米旗下精品生活电商</p>
-									</li>
-									<li><a style="color: #000000;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png"  width="64" height="64" color="black">米家有品</a>
-									<p>小米旗下精品生活电商</p>
-									</li>
-									<li><a style="color: #000000;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png"  width="64" height="64" color="black">米家有品</a>
-									<p>小米旗下精品生活电商</p>
-									</li>
-									<li><a style="color: #000000;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png"  width="64" height="64" color="black">米家有品</a>
-									<p>小米旗下精品生活电商</p>
-									</li>
-									<li><a style="color: #000000;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png"  width="64" height="64" color="black">米家有品</a>
-									<p>小米旗下精品生活电商</p>
-									</li>
-								</ul>	
-							</div>
-						<div style="height: 327px;"class="mk5">
+					</div>
+
+					<div style="height: 41px;">
+						<div style="float: left;margin: 10px;">玩机</div>
+						<div style="float: right;margin: 10px;">更多></div>
+					</div>
+					<div>
+						<ul class="play">
+							<li>
+								<a style="color: #000000;font-size: 14px;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png" width="64" height="64" color="black">米家有品</a>
+								<p style="font-size: 12px;">小米旗下精品生活电商</p>
+							</li>
+							<li>
+								<a style="color: #000000;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png" width="64" height="64" color="black">米家有品</a>
+								<p>小米旗下精品生活电商</p>
+							</li>
+							<li>
+								<a style="color: #000000;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png" width="64" height="64" color="black">米家有品</a>
+								<p>小米旗下精品生活电商</p>
+							</li>
+							<li>
+								<a style="color: #000000;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png" width="64" height="64" color="black">米家有品</a>
+								<p>小米旗下精品生活电商</p>
+							</li>
+							<li>
+								<a style="color: #000000;"><img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0421/20170421105304505.png" width="64" height="64" color="black">米家有品</a>
+								<p>小米旗下精品生活电商</p>
+							</li>
+						</ul>
+					</div>
+					<div style="height: 327px;" class="mk5">
 						<div style="height: 41px;width: 300px;">
 							<div style="float: left;margin: 10px;">小米学院</div>
 							<div style="float: right;margin: 10px;">更多></div>
 						</div>
-							<ul>
+						<ul>
 							<li>
-            				<a href="//bbs.xiaomi.cn/t-13265898" style="color: #000000;">
-               				 <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2016/1201/20161201111658787.png"  width="125" height="85">
-                			《小米学院》向所有米粉发烧友征稿            </a>
-                			</li>
-                			<li>
-            				<a href="//bbs.xiaomi.cn/t-12955875" style="color: #000000;">
-               				 <img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2016/0527/20160527024307310.png"  width="125" height="85">
-                教你如何把网盘资料转存小米路由        </a>
-        					</li>
-        					<li>
-            				<a style="color: #000000;">
-                			<img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2015/1130/20151130114823763.png" alt="早日享受VIP8等级特权不是梦" width="125" height="85">
-              	  早日享受VIP8等级特权不是梦      </a>
-       						 </li>
-        					<li>
-                         	<a style="color: #000000;">
-                			<img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2015/1110/20151110125431351.png" alt="轻松实现新老手机数据乾坤大挪移" width="125" height="85">
-                轻松实现新老手机数据乾坤大挪移            </a>
-       						 </li>
-							</ul>
-						
-						</div>
-						
-						
-						
-						
-							
-					
+								<a href="//bbs.xiaomi.cn/t-13265898" style="color: #000000;">
+									<img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2016/1201/20161201111658787.png" width="125" height="85"> 《小米学院》向所有米粉发烧友征稿 </a>
+							</li>
+							<li>
+								<a href="//bbs.xiaomi.cn/t-12955875" style="color: #000000;">
+									<img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2016/0527/20160527024307310.png" width="125" height="85"> 教你如何把网盘资料转存小米路由 </a>
+							</li>
+							<li>
+								<a style="color: #000000;">
+									<img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2015/1130/20151130114823763.png" alt="早日享受VIP8等级特权不是梦" width="125" height="85"> 早日享受VIP8等级特权不是梦 </a>
+							</li>
+							<li>
+								<a style="color: #000000;">
+									<img src="//cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2015/1110/20151110125431351.png" alt="轻松实现新老手机数据乾坤大挪移" width="125" height="85"> 轻松实现新老手机数据乾坤大挪移 </a>
+							</li>
+						</ul>
 
-						</div>
-					
+					</div>
 
-				
+				</div>
 
 			</div>
 		</div>
-	
-		<script>
-			var articalList = [{
-				title: "小米Note 3全新体验：带你走进全新的刷脸的时代",
-				imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926110326102.jpg",
-				owner: "小米手机",
-				publishDate: "2017年09月26日",
-				viewCount: 735,
-				talker: 8,
-				rewiew: "5.5英寸的护眼屏，高通骁龙660高端处理器、全系标配6GB大内存、3500mAh毫安电池、1600万美颜自拍、2倍变焦双摄、四轴光学防抖、人脸解锁等功能。",
-				linkAddress: "http://bbs.xiaomi.cn/t-13744948"
-			}, {
-				title: "小米圈铁耳机pro斩获2017中国好设计金奖，抢楼送2个",
-				imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926054650221.jpg",
-				owner: "智能硬件",
-				publishDate: "2017年09月26日",
-				viewCount: 466,
-				talker: 22,
-				rewiew: "好品质，好音质，好设计，让小米圈铁耳机pro从来自全球11个国家和地区的注册的3341件产品中，脱颖而出，斩获2017中国好设计金奖。",
-				linkAddress: "http://bbs.xiaomi.cn/t-13745173"
-			}, {
-				title: "咆哮推荐！最燃开学季 黑科技百校行手绘海报作品欣赏",
-				imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926025647461.jpg",
-				owner: "小米资讯",
-				publishDate: "2017年09月26日",
-				viewCount: 560,
-				talker: 6,
-				rewiew: "2017开学季期间，小米校园俱乐部各学校为这次活动手绘了超高水平的海报作品，一大波多才多艺的小鲜肉作品奉上，快来尝鲜欣赏吧！",
-				linkAddress: "http://bbs.xiaomi.cn/t-13737294"
-			}, {
-				title: "小米 MIX2 内置超清壁纸 | 完美无瑕 婉如琼玉",
-				imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926115008634.jpg",
-				owner: "软件应用",
-				publishDate: "2017年09月26日",
-				viewCount: 4141,
-				talker: 218,
-				rewiew: "今天为大家准备了小米Mix 2的专属壁纸，想要的同学快来点击下载吧！",
-				linkAddress: "http://bbs.xiaomi.cn/t-13717805"
-			}, {
-				title: "能说会聊米兔智能故事机 论带孩子我只服它",
-				imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926114738889.jpg",
-				owner: "智能硬件",
-				publishDate: "2017年09月26日",
-				viewCount: 402,
-				talker: 3,
-				rewiew: "米兔智能故事机专为儿童设计，在外型上采用了萌萌的兔子造型，米兔的兔子造型两只耳朵偏小，头部佩戴绒布帽子，机身光滑，颠覆了常见的小兔子形象，十分可爱。",
-				linkAddress: "http://bbs.xiaomi.cn/t-13682479"
-			}, {
-				title: "【投票】如果给你1000元买小米配件你会买什么",
-				imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926110456850.jpg",
-				owner: "小米手机",
-				publishDate: "2017年09月26日",
-				viewCount: 1210,
-				talker: 45,
-				rewiew: "相信不少小伙伴也进入了MAX2的大家庭，那么在购买手机的时候你有搭配了小米的其他配件吗？如果给你1000元，你会添置那些小米配件？让我们一起来说一说。",
-				linkAddress: "http://bbs.xiaomi.cn/t-13738371"
-			}]
-			var listHtml = ""
-			for(var i = 0; i < articalList.length; i++) {
-				listHtml += '<li><h3>' + articalList[i].title + '</h3>' + '<div class="art1"><h1>' + articalList[i].owner + '</h1>' + '<h2>' + articalList[i].publishDate + '</h2>' +
-				' <h4> '+articalList[i].viewCount+' </h4>'+'<h5>'+articalList[i].talker+
-				'</h5>'+'<h6>'+'分享'+'</h6></div>'+' <img src = "'+articalList[i].imgUrl+'" > '+' <div class="art2"> <p> '+articalList[i].rewiew+' '+'<a href="'+articalList[i].linkAddress+'">'+'全文》'+
-				'</a></p></div></li> '
-			}
 
-			document.getElementById('artical').innerHTML = listHtml
+		<script>
+			/*var articalList = [{
+													title: "小米Note 3全新体验：带你走进全新的刷脸的时代",
+													imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926110326102.jpg",
+													owner: "小米手机",
+													publishDate: "2017年09月26日",
+													viewCount: 735,
+													talker: 8,
+													rewiew: "5.5英寸的护眼屏，高通骁龙660高端处理器、全系标配6GB大内存、3500mAh毫安电池、1600万美颜自拍、2倍变焦双摄、四轴光学防抖、人脸解锁等功能。",
+													linkAddress: "http://bbs.xiaomi.cn/t-13744948"
+												}, {
+													title: "小米圈铁耳机pro斩获2017中国好设计金奖，抢楼送2个",
+													imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926054650221.jpg",
+													owner: "智能硬件",
+													publishDate: "2017年09月26日",
+													viewCount: 466,
+													talker: 22,
+													rewiew: "好品质，好音质，好设计，让小米圈铁耳机pro从来自全球11个国家和地区的注册的3341件产品中，脱颖而出，斩获2017中国好设计金奖。",
+													linkAddress: "http://bbs.xiaomi.cn/t-13745173"
+												}, {
+													title: "咆哮推荐！最燃开学季 黑科技百校行手绘海报作品欣赏",
+													imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926025647461.jpg",
+													owner: "小米资讯",
+													publishDate: "2017年09月26日",
+													viewCount: 560,
+													talker: 6,
+													rewiew: "2017开学季期间，小米校园俱乐部各学校为这次活动手绘了超高水平的海报作品，一大波多才多艺的小鲜肉作品奉上，快来尝鲜欣赏吧！",
+													linkAddress: "http://bbs.xiaomi.cn/t-13737294"
+												}, {
+													title: "小米 MIX2 内置超清壁纸 | 完美无瑕 婉如琼玉",
+													imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926115008634.jpg",
+													owner: "软件应用",
+													publishDate: "2017年09月26日",
+													viewCount: 4141,
+													talker: 218,
+													rewiew: "今天为大家准备了小米Mix 2的专属壁纸，想要的同学快来点击下载吧！",
+													linkAddress: "http://bbs.xiaomi.cn/t-13717805"
+												}, {
+													title: "能说会聊米兔智能故事机 论带孩子我只服它",
+													imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926114738889.jpg",
+													owner: "智能硬件",
+													publishDate: "2017年09月26日",
+													viewCount: 402,
+													talker: 3,
+													rewiew: "米兔智能故事机专为儿童设计，在外型上采用了萌萌的兔子造型，米兔的兔子造型两只耳朵偏小，头部佩戴绒布帽子，机身光滑，颠覆了常见的小兔子形象，十分可爱。",
+													linkAddress: "http://bbs.xiaomi.cn/t-13682479"
+												}, {
+													title: "【投票】如果给你1000元买小米配件你会买什么",
+													imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926110456850.jpg",
+													owner: "小米手机",
+													publishDate: "2017年09月26日",
+													viewCount: 1210,
+													talker: 45,
+													rewiew: "相信不少小伙伴也进入了MAX2的大家庭，那么在购买手机的时候你有搭配了小米的其他配件吗？如果给你1000元，你会添置那些小米配件？让我们一起来说一说。",
+													linkAddress: "http://bbs.xiaomi.cn/t-13738371"
+												}]*/
+			
+				$.ajax({
+					url: "apis/getArtucals"
+				}).then(function(data) {
+					var articalList = JSON.parse(data)
+					var listHtml = ""
+					for(var i = 0; i < articalList.length; i++) {
+						listHtml += '<li><h3>' + articalList[i].title + '</h3>' + '<div class="art1"><h1>' + articalList[i].owner + '</h1>' + '<h2>' + articalList[i].publishDate + '</h2>' +
+							' <h4> ' + articalList[i].viewCount + ' </h4>' + '<h5>' + articalList[i].talker +
+							'</h5>' + '<h6>' + '分享' + '</h6></div>' + ' <img src = "' + articalList[i].imgUrl + '" > ' + ' <div class="art2"> <p> ' + articalList[i].rewiew + ' ' + '<a href="' + articalList[i].linkAddress + '">' + '全文》' +
+							'</a></p></div></li> '
+					}
+
+					document.getElementById('artical').innerHTML = listHtml
+
+				})
+				
+			
 		</script>
 
 	</body>
