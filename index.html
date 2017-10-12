@@ -511,7 +511,7 @@
 		</div>
 
 		<script>
-			/*var articalList = [{
+			var testarticalList = [{
 													title: "小米Note 3全新体验：带你走进全新的刷脸的时代",
 													imgUrl: "http://cdn.cnbj0.fds.api.mi-img.com/b2c-bbs-cms/2017/0926/20170926110326102.jpg",
 													owner: "小米手机",
@@ -565,10 +565,11 @@
 													talker: 45,
 													rewiew: "相信不少小伙伴也进入了MAX2的大家庭，那么在购买手机的时候你有搭配了小米的其他配件吗？如果给你1000元，你会添置那些小米配件？让我们一起来说一说。",
 													linkAddress: "http://bbs.xiaomi.cn/t-13738371"
-												}]*/
+												}]
 			
 				$.ajax({
-					url: "apis/getArtucals"
+					url: "apis/getArtucals",
+					timeout:2000
 				}).then(function(data) {
 					var articalList = JSON.parse(data)
 					var listHtml = ""
@@ -581,7 +582,20 @@
 
 					document.getElementById('artical').innerHTML = listHtml
 
-				})
+				},
+				function(){
+					var articalList = testarticalList
+					var listHtml = ""
+					for(var i = 0; i < articalList.length; i++) {
+						listHtml += '<li><h3>' + articalList[i].title + '</h3>' + '<div class="art1"><h1>' + articalList[i].owner + '</h1>' + '<h2>' + articalList[i].publishDate + '</h2>' +
+							' <h4> ' + articalList[i].viewCount + ' </h4>' + '<h5>' + articalList[i].talker +
+							'</h5>' + '<h6>' + '分享' + '</h6></div>' + ' <img src = "' + articalList[i].imgUrl + '" > ' + ' <div class="art2"> <p> ' + articalList[i].rewiew + ' ' + '<a href="' + articalList[i].linkAddress + '">' + '全文》' +
+							'</a></p></div></li> '
+					}
+
+					document.getElementById('artical').innerHTML = listHtml
+				}
+				)
 				
 			
 		</script>
